@@ -13,12 +13,12 @@ makepkg -si --noconfirm
 cd ~
 rm -rf ~/yay
 
-pacman_packages= (
+pacman_packages=(
 	ghostty lf neovim rofi stow
 
 	zsh
 )
-aur_packages= (
+aur_packages=(
 	wl-kbptr
 
 	pokemon-colorscripts-git
