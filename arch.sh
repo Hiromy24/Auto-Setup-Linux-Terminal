@@ -28,6 +28,7 @@ sudo pacman -S --noconfirm "${pacman_packages[@]}"
 yay -S --noconfirm "${aur_packages[@]}"
 
 git clone --depth 1 https://github.com/Hiromy24/Dotfiles ~/dotfiles
+rm -rf .config/hypr
 cd ~/dotfiles
 stow cava 
 stow hypr 
