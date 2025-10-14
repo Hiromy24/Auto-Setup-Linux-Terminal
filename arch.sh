@@ -15,16 +15,10 @@ rm -rf ~/yay
 pacman_packages= (
 	ghostty lf neovim rofi stow
 
-	firefox dolphin
-
 	zsh
 )
 aur_packages= (
 	wl-kbptr
-
-	spotify
-
-	hyprshade hyprpaper 
 
 	pokemon-colorscripts-git
 )
