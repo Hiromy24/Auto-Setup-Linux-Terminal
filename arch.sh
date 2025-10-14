@@ -8,7 +8,8 @@ sudo localectl set-locale LANG=en_US.UTF-8
 
 sudo pacman -S --noconfirm --needed base-devel git
 git clone https://aur.archlinux.org/yay.git
-cd yay makepkg -si --noconfirm
+cd yay 
+makepkg -si --noconfirm
 cd ~
 rm -rf ~/yay
 
