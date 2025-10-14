@@ -32,7 +32,7 @@ rm -rf .config/hypr/
 cd ~/dotfiles
 stow cava 
 stow hypr 
-stow wl-kbpt
+stow wl-kbptr
 cd ~
 
 echo "shell"
