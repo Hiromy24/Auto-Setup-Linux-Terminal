@@ -31,7 +31,14 @@ git clone --depth 1 https://github.com/Hiromy24/Dotfiles ~/dotfiles
 cd ~/dotfiles
 bash hiromy/install_pkg.sh
 
+echo "shell"
+ZSH_PATH="$(which zsh)"
+grep -qxF "$ZSH_PATH" /etc/shells || echo "$ZSH_PATH" | sudo tee -a /etc/shells
+chsh -s "$ZSH_PATH"
+
 rm ~/.zshrc
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 stow cava 
 stow hypr 
@@ -39,9 +46,3 @@ stow wl-kbptr
 stow zshrc
 cd ~
 
-echo "shell"
-ZSH_PATH="$(which zsh)"
-grep -qxF "$ZSH_PATH" /etc/shells || echo "$ZSH_PATH" | sudo tee -a /etc/shells
-chsh -s "$ZSH_PATH"
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
