@@ -31,9 +31,12 @@ git clone --depth 1 https://github.com/Hiromy24/Dotfiles ~/dotfiles
 cd ~/dotfiles
 bash hiromy/install_pkg.sh
 
+rm ~/.zshrc
+
 stow cava 
 stow hypr 
 stow wl-kbptr
+stow zshrc
 cd ~
 
 echo "shell"
