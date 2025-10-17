@@ -14,9 +14,9 @@ cd ~
 rm -rf ~/yay
 
 pacman_packages=(
-	ghostty lf neovim rofi stow
+	ghostty lf neovim rofi fastfetch
 
-	zsh
+	zsh wl-clipboard stow make curl wget unzip openssh
 )
 aur_packages=(
 	wl-kbptr
@@ -40,3 +40,5 @@ echo "shell"
 ZSH_PATH="$(which zsh)"
 grep -qxF "$ZSH_PATH" /etc/shells || echo "$ZSH_PATH" | sudo tee -a /etc/shells
 chsh -s "$ZSH_PATH"
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
