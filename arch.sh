@@ -44,5 +44,7 @@ stow cava
 stow hypr 
 stow wl-kbptr
 stow zshrc
+stow waybar
+stow swaync
 cd ~
 
