@@ -40,7 +40,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 rm -rf ~/.zshrc
 
-stow cava 
+stow cava
+stow colors
+stow ghostty
 stow hypr 
 stow wl-kbptr
 stow zshrc
